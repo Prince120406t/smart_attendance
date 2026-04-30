@@ -109,6 +109,21 @@ export class AdminDashboard implements AfterViewInit {
         { date: 'Oct 24, 2026', status: 'Absent', checkIn: '--', checkOut: '--' },
       ],
       faceImages: []
+    },
+    {
+      id: 'USR-004',
+      name: 'abcd',
+      email: 'abc@company.com',
+      phone: '1234567890',
+      role: 'User',
+      status: 'Inactive',
+      lastLogin: 'Oct 10, 2026',
+      avatar: 'https://ui-avatars.com/api/?name=AB&background=3b82f6&color=fff&size=15://ui-avatars.com/api/?name=Charlie+Davis&background=ff6b6b&color=fff',
+      todayStatus: 'Absent',
+      attendanceHistory: [
+        { date: 'Oct 24, 2026', status: 'Absent', checkIn: '--', checkOut: '--' },
+      ],
+      faceImages: []
     }
   ];
 
