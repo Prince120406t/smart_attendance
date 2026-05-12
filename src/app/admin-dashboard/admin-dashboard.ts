@@ -61,8 +61,8 @@ export class AdminDashboard implements AfterViewInit {
     {
       id: 'USR-001',
       name: 'ankita k',
-      email: 'abc@company.com',
-      phone: '1234567890',
+      email: 'ankita@company.com',
+      phone: '9905673460',
       role: 'Admin',
       status: 'Active',
       lastLogin: 'Today, 08:30 AM',
@@ -81,8 +81,8 @@ export class AdminDashboard implements AfterViewInit {
     {
       id: 'USR-002',
       name: 'abhishek sharma',
-      email: 'abc@company.com',
-      phone: '1234567890',
+      email: 'abhi@company.com',
+      phone: '8890563890',
       role: 'User',
       status: 'Active',
       lastLogin: 'Today, 09:15 AM',
@@ -98,8 +98,8 @@ export class AdminDashboard implements AfterViewInit {
     {
       id: 'USR-003',
       name: 'sneha gupta',
-      email: 'abc@company.com',
-      phone: '1234567890',
+      email: 'sneha@company.com',
+      phone: '9099495736',
       role: 'User',
       status: 'Inactive',
       lastLogin: 'Oct 10, 2026',
@@ -113,8 +113,8 @@ export class AdminDashboard implements AfterViewInit {
     {
       id: 'USR-004',
       name: 'sonakshi p',
-      email: 'abc@company.com',
-      phone: '1234567890',
+      email: 'sonakshi@company.com',
+      phone: '8978653423',
       role: 'User',
       status: 'Inactive',
       lastLogin: 'Oct 10, 2026',
