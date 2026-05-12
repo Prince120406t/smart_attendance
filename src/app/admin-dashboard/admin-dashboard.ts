@@ -60,13 +60,13 @@ export class AdminDashboard implements AfterViewInit {
   users = [
     {
       id: 'USR-001',
-      name: 'Abc',
+      name: 'ankita k',
       email: 'abc@company.com',
       phone: '1234567890',
       role: 'Admin',
       status: 'Active',
       lastLogin: 'Today, 08:30 AM',
-      avatar: 'https://ui-avatars.com/api/?name=AD&background=3b82f6&color=fff&size=150/pngtree-vector-business-men-icon-png-image_956508.jpg',
+      avatar: 'https://ui-avatars.com/api/?name=Ak&background=3b82f6&color=fff&size=150/pngtree-vector-business-men-icon-png-image_956508.jpg',
       todayStatus: 'Present',
       attendanceHistory: [
         { date: 'Oct 24, 2026', status: 'Present', checkIn: '08:30 AM', checkOut: '05:00 PM' },
@@ -80,13 +80,13 @@ export class AdminDashboard implements AfterViewInit {
     },
     {
       id: 'USR-002',
-      name: 'abc',
+      name: 'abhishek sharma',
       email: 'abc@company.com',
       phone: '1234567890',
       role: 'User',
       status: 'Active',
       lastLogin: 'Today, 09:15 AM',
-      avatar: 'https://ui-avatars.com/api/?name=AB&background=3b82f6&color=fff&size=150://ui-avatars.com/api/?name=Bob+Smith&background=38d39f&color=fff',
+      avatar: 'https://ui-avatars.com/api/?name=AS&background=3b82f6&color=fff&size=150://ui-avatars.com/api/?name=Bob+Smith&background=38d39f&color=fff',
       todayStatus: 'Present',
       attendanceHistory: [
         { date: 'Oct 24, 2026', status: 'Present', checkIn: '09:15 AM', checkOut: 'In Progress' },
@@ -97,13 +97,13 @@ export class AdminDashboard implements AfterViewInit {
     },
     {
       id: 'USR-003',
-      name: 'abc',
+      name: 'sneha gupta',
       email: 'abc@company.com',
       phone: '1234567890',
       role: 'User',
       status: 'Inactive',
       lastLogin: 'Oct 10, 2026',
-      avatar: 'https://ui-avatars.com/api/?name=AB&background=3b82f6&color=fff&size=15://ui-avatars.com/api/?name=Charlie+Davis&background=ff6b6b&color=fff',
+      avatar: 'https://ui-avatars.com/api/?name=SG&background=3b82f6&color=fff&size=15://ui-avatars.com/api/?name=Charlie+Davis&background=ff6b6b&color=fff',
       todayStatus: 'Absent',
       attendanceHistory: [
         { date: 'Oct 24, 2026', status: 'Absent', checkIn: '--', checkOut: '--' },
@@ -112,13 +112,13 @@ export class AdminDashboard implements AfterViewInit {
     },
     {
       id: 'USR-004',
-      name: 'abcd',
+      name: 'sonakshi p',
       email: 'abc@company.com',
       phone: '1234567890',
       role: 'User',
       status: 'Inactive',
       lastLogin: 'Oct 10, 2026',
-      avatar: 'https://ui-avatars.com/api/?name=AB&background=3b82f6&color=fff&size=15://ui-avatars.com/api/?name=Charlie+Davis&background=ff6b6b&color=fff',
+      avatar: 'https://ui-avatars.com/api/?name=SP&background=3b82f6&color=fff&size=15://ui-avatars.com/api/?name=Charlie+Davis&background=ff6b6b&color=fff',
       todayStatus: 'Absent',
       attendanceHistory: [
         { date: 'Oct 24, 2026', status: 'Absent', checkIn: '--', checkOut: '--' },
@@ -129,7 +129,7 @@ export class AdminDashboard implements AfterViewInit {
 
   setActiveTab(tab: string) {
     this.activeTab = tab;
-    
+
     setTimeout(() => {
       gsap.from('.page-title', {
         opacity: 0,

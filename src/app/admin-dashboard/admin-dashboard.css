@@ -1,19 +1,30 @@
 :host {
     display: block;
     font-family: 'Inter', sans-serif;
-    --bg-light: #f8fafc;
-    --card-bg: #ffffff;
-    --text-main: #1e293b;
-    --text-muted: #64748b;
-    --primary: #3b82f6;
-    --primary-light: #eff6ff;
+
+    --bg-light: #fff7f7;
+    --card-bg: rgba(255,255,255,0.88);
+
+    --text-main: #3f3f46;
+    --text-muted: #71717a;
+
+    --primary: #ec4899;
+    --primary-light: #fce7f3;
+
     --success: #10b981;
     --success-light: #d1fae5;
+
     --danger: #ef4444;
     --danger-light: #fee2e2;
-    --border: #e2e8f0;
-}
 
+    --border: #fed7aa;
+
+    background:
+    linear-gradient(135deg,
+    #fbcfe8,
+    #fde68a,
+    #ddd6fe);
+}
 .dashboard-container {
     display: flex;
     min-height: 100vh;

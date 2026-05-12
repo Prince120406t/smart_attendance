@@ -86,15 +86,15 @@ export class Login implements AfterViewInit {
 
   onSubmit(event: Event) {
     event.preventDefault();
-    
+
     const usernameInput = document.getElementById('username') as HTMLInputElement;
     const passwordInput = document.getElementById('password') as HTMLInputElement;
-    
+
     if (!usernameInput?.value || !passwordInput?.value) {
       alert('All input fields are required! Please enter your account credentials.');
       return;
     }
-    
+
     if (this.faceStatus !== 'Verified ✓') {
       alert('FACE DETECT FIRST! Please click the Face ID button to verify your biometric identity.');
       return;

@@ -82,13 +82,13 @@ export class Dashboard implements AfterViewInit {
   ];
 
   userProfile = {
-    name: 'abc',
+    name: 'Abhay Gupta',
     role: 'Senior Software Engineer',
     department: 'Engineering',
-    email: 'abc@company.com',
-    phone: '1234567890',
+    email: 'abhay@company.com',
+    phone: '9907975647',
     employeeId: 'EMP-2026-042',
-    joinDate: 'March 15, 2024',
+    joinDate: 'March 15, 2025',
     biometricStatus: 'Active & Verified',
   };
 

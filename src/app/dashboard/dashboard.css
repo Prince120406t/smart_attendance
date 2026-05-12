@@ -1,17 +1,29 @@
 :host {
     display: block;
     font-family: 'Inter', sans-serif;
-    --bg-light: #f8fafc;
-    --card-bg: #ffffff;
-    --text-main: #1e293b;
-    --text-muted: #64748b;
-    --primary: #3b82f6;
-    --primary-light: #eff6ff;
+
+    --bg-light: #fff7f7;
+    --card-bg: rgba(255,255,255,0.88);
+
+    --text-main: #3f3f46;
+    --text-muted: #71717a;
+
+    --primary: #ec4899;
+    --primary-light: #fce7f3;
+
     --success: #10b981;
     --success-light: #d1fae5;
+
     --danger: #ef4444;
     --danger-light: #fee2e2;
-    --border: #e2e8f0;
+
+    --border: #fed7aa;
+
+    background:
+    linear-gradient(135deg,
+    #fbcfe8,
+    #fde68a,
+    #ddd6fe);
 }
 
 .dashboard-container {
@@ -378,4 +390,105 @@
     .content-grid {
         grid-template-columns: 1fr;
     }
+} 
+.meeting-participants .av:first-child { margin-left: 0; }
+.join-btn {
+  background: var(--success);
+  color: white;
+  border: none;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex; align-items: center; gap: 0.3rem;
+}
+.meeting-tag {
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 6px;
+  background: var(--primary-light);
+  color: var(--primary);
+}
+
+/* Perf track bar */
+.perf-track-bar {
+  height: 14px;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+.perf-track-seg { height: 100%; }
+.perf-track-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+.perf-track-legend {
+  display: flex; flex-wrap: wrap; gap: 0.5rem 1rem;
+  font-size: 0.72rem; margin-top: 0.5rem;
+}
+.perf-track-legend span { display: flex; align-items: center; gap: 0.35rem; }
+
+/* Attendance tab */
+.att-table-card { margin-top: 0; }
+
+/* Tables */
+.table-responsive { overflow-x: auto; }
+.logs-table { width: 100%; border-collapse: collapse; }
+.logs-table th, .logs-table td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border); font-size: 0.85rem; }
+.logs-table th { font-weight: 600; color: var(--muted); font-size: 0.78rem; text-transform: uppercase; }
+.status-badge { padding: 0.2rem 0.65rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; }
+.status-badge.present { background: #f0fdf4; color: #16a34a; }
+.status-badge.absent { background: #fef2f2; color: #dc2626; }
+.text-green { color: #16a34a; font-weight: 600; }
+.text-danger { color: #dc2626; font-weight: 600; }
+
+/* Profile */
+.profile-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 1rem; }
+.profile-avatar-card {
+  background: var(--card);
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+}
+.profile-big-avatar {
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.profile-details-card {
+  background: var(--card);
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+}
+.profile-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 1rem; }
+.profile-field label { display: block; font-size: 0.75rem; color: var(--muted); text-transform: uppercase; font-weight: 600; margin-bottom: 0.25rem; }
+.profile-field div { font-size: 0.9rem; font-weight: 500; }
+.profile-actions { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border); display: flex; gap: 0.75rem; }
+.btn-primary { background: var(--primary); color: white; border: none; padding: 0.6rem 1.25rem; border-radius: 8px; font-family: inherit; font-weight: 600; font-size: 0.85rem; cursor: pointer; }
+.btn-outline { background: transparent; color: var(--primary); border: 1px solid var(--primary); padding: 0.6rem 1.25rem; border-radius: 8px; font-family: inherit; font-weight: 600; font-size: 0.85rem; cursor: pointer; }
+
+/* Page title row */
+.page-title-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.2rem; }
+.page-title { font-size: 1.3rem; font-weight: 700; }
+
+@media (max-width: 900px) {
+  .main-grid { grid-template-columns: 1fr; }
+  .sidebar { display: none; }
+  .profile-grid { grid-template-columns: 1fr; }
 }
